@@ -4,7 +4,7 @@ Documentation=https://github.com/imcf/ipmitool-prometheus-textfile
 
 [Service]
 Restart=always
-User=node_exporter
+User=root
 Environment=TEXTFILE_DIR=/var/lib/node_exporter/textfile_collector
 ExecStart=/opt/ipmitool-prometheus-textfile/ipmitool-prometheus.sh
 
